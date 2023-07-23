@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTacToe</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div style="display: flex" class="clickable" onclick="function f() {location.reload()}">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/48/63/22/1000_F_248632285_hc2bO4QO3SEba2XShbz5u4AapU6DhedF.jpg" alt="Logo" class="logo">
+        <div class="title">Tic Tac Toe</div>
+    </div>
+    <div class="score" onmouseover="show()" onmouseout="hide()" onclick="resetScore(this)">
+        <span id="score-x">0</span>
+        <span>-</span>
+        <span id="score-o">0</span>
+    </div>
+</header>
+
+<div id="reload">
+    Zurücksetzen?
+</div>
+
+<div id="bannerCon">
+
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="grid-item unused" onclick="handleClick(0, 0)"></div>
+        <div class="grid-item unused" onclick="handleClick(0, 1)"></div>
+        <div class="grid-item unused" onclick="handleClick(0, 2)"></div>
+        <div class="grid-item unused" onclick="handleClick(1, 0)"></div>
+        <div class="grid-item unused" onclick="handleClick(1, 1)"></div>
+        <div class="grid-item unused" onclick="handleClick(1, 2)"></div>
+        <div class="grid-item unused" onclick="handleClick(2, 0)"></div>
+        <div class="grid-item unused" onclick="handleClick(2, 1)"></div>
+        <div class="grid-item unused" onclick="handleClick(2, 2)"></div>
+    </div>
+</div>
+
+<div id="turnIndicator">X</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
